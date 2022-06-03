@@ -8,5 +8,79 @@
 }
 
 .background {
-    
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* hide UI elements */
+
+.hide {
+    display: none;
+}
+
+/* when in doubt margin 0 auto , make sure everything is spaced properly and even*/
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33%;
+    grid-template-rows:  33%;
+    max-width: 300px;
+}
+
+/* center it with flex ; fill avail free space or shrink to prevent overflow
+*/
+
+.tile {
+    border: 1px navajowhite;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    cursor: crosshair;
+}
+
+.Player1 {
+    color: aqua;
+}
+
+.Player2 {
+    color: #eb7434;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 1em;
+    cursor: pointer;
 }
